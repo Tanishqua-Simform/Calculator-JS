@@ -1,0 +1,119 @@
+/* General Reset */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 450px;
+  /* height: 560px; */
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Display */
+.input {
+  flex: 1;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Degree and Memory Row */
+.degree,
+.memory {
+  display: flex;
+  padding: 10px;
+}
+
+.degree {
+  padding-left: 1rem;
+  gap: 4rem;
+}
+
+.memory {
+  justify-content: space-around;
+}
+
+.trigonometry {
+  display: flex;
+  padding: 10px;
+  font-size: 1rem;
+  gap: 4rem;
+  cursor: pointer;
+}
+
+.trigonometry div {
+  cursor: pointer;
+}
+
+.trigonometry i {
+  font-size: 14px;
+}
+
+.degree div,
+.memory div {
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Button Grid */
+.button {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.button div {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gray {
+  background-color: #f8f8f8;
+}
+
+.white {
+  background-color: white;
+  font-weight: bold;
+}
+
+.gray-text {
+  color: #c3c3c3;
+}
+
+.button div:hover {
+  background-color: #b3b3b3;
+}
+
+/* Special Buttons */
+.button .equal {
+  background-color: #0047ab;
+  color: white;
+}
+
+.button .equal:hover {
+  background-color: #005fd1;
+}
+
+.button #clear:hover,
+.button #backspace:hover {
+  background-color: #ff7d7d;
+}
