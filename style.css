@@ -20,7 +20,7 @@ body {
 /* Display */
 .input {
   flex: 1;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-align: right;
   padding: 20px;
@@ -86,8 +86,14 @@ body {
   user-select: none;
 }
 
+.button sup {
+  font-size: 0.8rem;
+  vertical-align: super;
+}
+
 .gray {
   background-color: #f8f8f8;
+  font-style: italic;
 }
 
 .white {
@@ -105,7 +111,7 @@ body {
 
 /* Special Buttons */
 .button .equal {
-  background-color: #0047ab;
+  background-color: #73a6e4;
   color: white;
 }
 
